@@ -10,9 +10,15 @@
             Rettangolo r = new Rettangolo(4, 2);
             Cerchio c = new Cerchio(4);
 
+            Triangolo t = new Triangolo(3, 4, 5);
+            Rombo rombo = new Rombo(10, 8);
+
             Console.WriteLine($"Figura:  {q.Visualizzati()}");
             Console.WriteLine($"Figura:  {r.Visualizzati()}");
             Console.WriteLine($"Figura:  {c.Visualizzati()}");
+
+            Console.WriteLine($"Figura:  {t.Visualizzati()}");
+            Console.WriteLine($"Figura:  {rombo.Visualizzati()}");
 
         }
     }
