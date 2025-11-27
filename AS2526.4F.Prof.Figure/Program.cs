@@ -8,11 +8,11 @@
 
             Quadrato q = new Quadrato(4);
             Rettangolo r = new Rettangolo(4, 2);
-            //Cerchio c = new Cerchio(4);
+            Cerchio c = new Cerchio(4);
 
             Console.WriteLine($"Figura:  {q.Visualizzati()}");
             Console.WriteLine($"Figura:  {r.Visualizzati()}");
-            //Console.WriteLine($"Il cerchio ha area {c.Area()} e perimetro {c.Perimetro()}");
+            Console.WriteLine($"Figura:  {c.Visualizzati()}");
 
         }
     }
