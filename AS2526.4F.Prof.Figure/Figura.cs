@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AS2526._4F.Prof.Figure
 {
-    public class Figura
+    public abstract class Figura
     {
         protected int lati;
         protected string nome;
