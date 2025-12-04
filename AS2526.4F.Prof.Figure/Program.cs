@@ -13,10 +13,20 @@
             Triangolo t = new Triangolo(3, 4, 5);
             Rombo rombo = new Rombo(10, 8);
 
-            // inizializzazione statica
-            Figura[] figure = { q, r, c, t, rombo };
+            // inizializzazione dinamica
 
-            foreach (Figura figura in figure)
+            // definisci e istanzia la lista di Figura
+            List<Figura> lstFigure = new List<Figura>();
+
+            // Inserisci gli elementi nella lista
+            lstFigure.Add(q);
+            lstFigure.Add(r);
+            lstFigure.Add(c);
+            lstFigure.Add(t);
+            lstFigure.Add(rombo);
+
+
+            foreach (Figura figura in lstFigure)
             {
                 Console.WriteLine($" Dettagli : {figura.Visualizzati()}");
             }
