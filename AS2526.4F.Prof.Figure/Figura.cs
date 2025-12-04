@@ -20,8 +20,8 @@ namespace AS2526._4F.Prof.Figure
             nome = "Figura generica";
         }
 
-        public virtual double Area() { return 0; }
-        public virtual double Perimetro() { return 0; }
+        public abstract double Area();
+        public abstract double Perimetro();
         public virtual string Visualizzati()
         {
             return $"Il {nome} ha area {Math.Round(Area(),2)} e perimetro {Math.Round(Perimetro(),2)}";
