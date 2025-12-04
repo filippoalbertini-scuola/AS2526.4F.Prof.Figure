@@ -8,6 +8,11 @@ namespace AS2526._4F.Prof.Figure
     {
         double raggio;
 
+        public double Raggio
+        {
+            get { return raggio; }
+        }
+
         public Cerchio(double raggio)
         {
             nome = "Cerchio";
@@ -24,6 +29,10 @@ namespace AS2526._4F.Prof.Figure
         public override double Perimetro()
         {
             return 2 * Math.PI * raggio;
+        }
+        public override string Visualizzati()
+        {
+            return $"Il {nome} ha area {Math.Round(Area(), 2)} e circonferenza {Math.Round(Perimetro(), 2)} con raggio {raggio}";
         }
     }
 }

@@ -25,13 +25,43 @@
             foreach (Figura figura in lstFigure)
             {
                 Console.WriteLine($" Dettagli : {figura.Visualizzati()}");
-                
-                if (figura is Quadrato) { 
+
+                // dati aggiuntivi
+                // con switch
+                switch (figura.Nome.ToUpper())
+                {
+                    case "QUADRATO":
+                        // cast esplito sulla variabile quadrato
+                        Quadrato quadrato = (Quadrato)figura;
+
+                        Console.WriteLine($" \tLato : {quadrato.Lato}");
+                        break;
+
+                    case "CERCHIO":
+                        // cast esplito sulla variabile quadrato
+                        Cerchio cerchio = (Cerchio)figura;
+
+                        Console.WriteLine($" \tRaggio : {cerchio.Raggio}");
+                        break;
+
+                }
+
+                // con if multiplo
+                if (figura is Quadrato)
+                {
                     // cast esplito sulla variabile quadrato
                     Quadrato quadrato = (Quadrato)figura;
 
                     Console.WriteLine($" \tLato : {quadrato.Lato}");
+
+                } else if (figura is Cerchio)
+                {
+                    // cast esplito sulla variabile quadrato
+                    Cerchio cerchio = (Cerchio)figura;
+
+                    Console.WriteLine($" \tRaggio : {cerchio.Raggio}");
                 }
+
             }
 
         }

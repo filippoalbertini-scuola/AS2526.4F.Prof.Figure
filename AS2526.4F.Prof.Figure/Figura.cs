@@ -9,6 +9,11 @@ namespace AS2526._4F.Prof.Figure
         protected int lati;
         protected string nome;
 
+        public string Nome
+        {
+            get { return nome; }
+        }
+
         public Figura()
         {
             lati = 0;

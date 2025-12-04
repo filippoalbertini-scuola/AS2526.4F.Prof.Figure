@@ -32,7 +32,7 @@ namespace AS2526._4F.Prof.Figure
 
         public override string Visualizzati()
         {
-            return $"Il {nome} ha area {Math.Round(Area(), 2)} e perimetro {Math.Round(Perimetro(), 2)} con lato {lato}";
+            return $"{base.Visualizzati()} con lato {lato}";
         }
 
 
