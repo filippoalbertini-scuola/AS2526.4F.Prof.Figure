@@ -15,20 +15,23 @@
 
             // inizializzazione dinamica
 
-            // definisci e istanzia la lista di Figura
-            List<Figura> lstFigure = new List<Figura>();
+            // definisci e istanzia la lista di Figura con assegnazione statica
+            List<Figura> lstFigure = new List<Figura>() 
+                { q,r,c,t};
 
-            // Inserisci gli elementi nella lista
-            lstFigure.Add(q);
-            lstFigure.Add(r);
-            lstFigure.Add(c);
-            lstFigure.Add(t);
+            // e aggiunge Rombo
             lstFigure.Add(rombo);
-
 
             foreach (Figura figura in lstFigure)
             {
                 Console.WriteLine($" Dettagli : {figura.Visualizzati()}");
+                
+                if (figura is Quadrato) { 
+                    // cast esplito sulla variabile quadrato
+                    Quadrato quadrato = (Quadrato)figura;
+
+                    Console.WriteLine($" \tLato : {quadrato.Lato}");
+                }
             }
 
         }

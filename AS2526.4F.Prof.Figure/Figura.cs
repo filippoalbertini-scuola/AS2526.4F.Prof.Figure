@@ -17,7 +17,7 @@ namespace AS2526._4F.Prof.Figure
 
         public virtual double Area() { return 0; }
         public virtual double Perimetro() { return 0; }
-        public string Visualizzati()
+        public virtual string Visualizzati()
         {
             return $"Il {nome} ha area {Math.Round(Area(),2)} e perimetro {Math.Round(Perimetro(),2)}";
         }
