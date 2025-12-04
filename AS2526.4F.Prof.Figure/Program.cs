@@ -27,23 +27,16 @@
                 Console.WriteLine($" Dettagli : {figura.Visualizzati()}");
 
                 // dati aggiuntivi
-                // con switch
-                switch (figura.Nome.ToUpper())
+                // con switch pattern matching
+                switch (figura)
                 {
-                    case "QUADRATO":
-                        // cast esplito sulla variabile quadrato
-                        Quadrato quadrato = (Quadrato)figura;
-
+                    case Quadrato quadrato:
                         Console.WriteLine($" \tLato : {quadrato.Lato}");
                         break;
 
-                    case "CERCHIO":
-                        // cast esplito sulla variabile quadrato
-                        Cerchio cerchio = (Cerchio)figura;
-
+                    case Cerchio cerchio:
                         Console.WriteLine($" \tRaggio : {cerchio.Raggio}");
                         break;
-
                 }
 
                 // con if multiplo
